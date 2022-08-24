@@ -15,7 +15,6 @@ In this codelab, working from this starter app, you:
 * Use channels and importance for the app notifications. 
 * Customize and style the notifications.
 
-
 Pre-requisites
 --------------
 
@@ -23,11 +22,9 @@ You should be familiar with:
 
 * Services, AlarmManager, Broadcast Receivers.
 
-
 Getting Started
 ---------------
 
 1. Download
-2. Swtich to start branch
+2. Switch to start branch
 3. Run the app.
-
