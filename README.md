@@ -27,7 +27,8 @@ You should be familiar with:
 Getting Started
 ---------------
 
-1. Download
-2. Switch to start branch
-3. Run the app.
+1. JDK 21 needs to be set and JAVA_HOME configured correctly. Use [SDKMAN](https://sdkman.io/usage) to set this up if needed.
+2. Download
+3. Switch to start branch
+4. Run the app.
 
