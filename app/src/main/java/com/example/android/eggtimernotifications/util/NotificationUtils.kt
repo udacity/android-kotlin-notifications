@@ -47,7 +47,7 @@ fun NotificationManager.sendNotification(messageBody: String, applicationContext
         applicationContext,
         NOTIFICATION_ID,
         contentIntent,
-        PendingIntent.FLAG_UPDATE_CURRENT
+        PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
     )
 
     // TODO: Step 2.0 add style
@@ -57,7 +57,6 @@ fun NotificationManager.sendNotification(messageBody: String, applicationContext
     )
     val bigPicStyle = NotificationCompat.BigPictureStyle()
         .bigPicture(eggImage)
-        .bigLargeIcon(null)
 
     // TODO: Step 2.2 add snooze action
     val snoozeIntent = Intent(applicationContext, SnoozeReceiver::class.java)
@@ -65,7 +64,7 @@ fun NotificationManager.sendNotification(messageBody: String, applicationContext
         applicationContext,
         REQUEST_CODE,
         snoozeIntent,
-        FLAGS)
+        FLAGS or PendingIntent.FLAG_IMMUTABLE)
 
     // TODO: Step 1.2 get an instance of NotificationCompat.Builder
     // Build the notification
